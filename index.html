@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I-NoteBook Application</title>
+    <link rel="shortcut icon" href="image.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span>I Note-Book</span>
+      </nav>
+    </header>
+    <div class="main">
+      <div class="right">
+        <div class="noteDiv"></div>
+      </div>
+      <div class="left">
+        <h1>Save A New Note</h1>
+        <form>
+          <input
+            type="text"
+            id="title"
+            placeholder="Enter Your Note Title...."
+          />
+          <textarea id="NoteInputArea" cols="50" rows="10"></textarea>
+          <input type="text" id="title" placeholder="Enter Your Note Tag...." />
+          <button onclick="saveNote()" id="SaveBtn">Save Note</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
